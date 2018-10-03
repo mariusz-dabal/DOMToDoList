@@ -1,0 +1,127 @@
+/*********************
+Basic styles
+*********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Just Another Hand', cursive;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.sheet {
+  width: 90%;
+  height: 90vh;
+  margin: 5vh auto 5vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #faf2ad;
+  overflow: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 2%;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+p {
+  font-size: 2em;
+}
+
+form {
+  margin-top: 3%;
+}
+
+input[type=text] {
+  width: 60%;
+  border: none;
+  border-bottom: 1px dotted #000;
+  background: #faf2ad;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 1.5em;
+  outline: none;
+}
+
+li input[type=text] {
+  width: 100%;
+}
+
+input[type=submit] {
+  width: 10%;
+  display: inline-block;
+  border: none;
+  /* border: 1px dotted #000; */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: #faf2ad;
+  color: #000;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+
+ul {
+  font-size: 1.7em;
+  margin: 0 5%;
+  padding: 2px;
+}
+
+li {
+  border-bottom: .5px dotted #000;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+span {
+  margin-right: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: #faf2ad;
+  font-family: 'Just Another Hand', cursive;
+  font-size: .9em;
+  padding: 0 8px 0;
+}
+
+i {
+  font-size: .9em;
+}
+
+/*********************
+Media queries
+*********************/
+
+@media screen and ( min-width: 600px ) {
+  .sheet {
+    width: 80%;
+  }
+}
+
+@media screen and ( min-width: 768px ) {
+  .sheet {
+    width: 60%;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  .sheet {
+    width: 40%;
+  }
+}
